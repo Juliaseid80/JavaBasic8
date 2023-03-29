@@ -1,0 +1,21 @@
+package HW;
+
+import java.util.Scanner;
+
+public class ConverterDemo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Converter cel = new Converter();
+        System.out.println("Enter please a temperature in celsius: ");
+        double first = scanner.nextDouble();
+
+        cel.convertFahrenheit(first);
+        System.out.println("Your temperature in fahrenheit is: " + cel.convertFahrenheit(first));
+
+        cel.convertKelvin(first);
+        System.out.println("Your temperature in kelvin is: " + cel.convertKelvin(first));
+
+        scanner.close();
+
+    }
+}

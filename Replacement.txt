@@ -1,0 +1,18 @@
+package HW;
+
+import javax.sound.midi.Soundbank;
+
+public class Replacement {
+    public static void main(String[] args) {
+        int q = 5;
+        int w = 25;
+        int t = q;
+        System.out.println("The value of q is: " + q);
+        System.out.println("The value of w is: " + w);
+        q = w;
+        w = t;
+        System.out.println();
+        System.out.println("The value of q is: " + q);
+        System.out.println("The value of w is: " + w);
+    }
+}
